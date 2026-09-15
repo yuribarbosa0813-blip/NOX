@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOX - Tabelas-Verdade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>NOX</h1>
+    <p>Assistente de Matemática</p>
+  </header>
+
+  <section class="sobre">
+    <h2>Tabelas-Verdade</h2>
+  </section>
+
+  <section class="sobre">
+    <h2>Vamos aprender com o Nox</h2>
+
+    <div class="teoria">
+      <p>Uma <strong>proposição</strong> é uma frase declarativa que pode ser classificada como <strong>Verdadeira
+          (V)</strong> ou <strong>Falsa (F)</strong>, mas não as duas ao mesmo tempo. Ex.: “7 é maior que 3” é uma
+        proposição verdadeira. Uma pergunta como “Você estudou?” não é uma proposição lógica, pois não possui valor V ou
+        F determinado.</p>
+
+      <p>Em uma expressão lógica, podemos representar proposições por letras, como <strong>A</strong>,
+        <strong>B</strong> e <strong>C</strong>. Ex.: A = “Está chovendo” e B = “Levei guarda-chuva”.</p><br>
+
+
+      <h3>1. NÃO (¬ ou ~) — negação</h3>
+
+      <p>O <strong>NÃO</strong> inverte o valor lógico de uma proposição: se A é verdadeira, ¬A é falsa; se A é falsa,
+        ¬A é verdadeira.</p>
+
+      <table>
+        <tr>
+          <th>A</th>
+          <th>¬A</th>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+        </tr>
+      </table>
+
+      <p><strong>Exemplo:</strong> A = “8 é maior que 5” (V). Logo, ¬A = “8 não é maior que 5” (F).</p>
+      <br>
+
+      <h3>2. E (∧) — conjunção</h3>
+
+      <p>O <strong>E</strong> combina duas proposições e só produz resultado <strong>verdadeiro quando as duas são
+          verdadeiras</strong>.</p>
+
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>A ∧ B</th>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+      </table>
+
+      <p><strong>Exemplo:</strong> A = “2 é par” (V) e B = “5 é maior que 1” (V). Portanto, A ∧ B = V.</p>
+      <br>
+
+      <h3>3. OU (∨) — disjunção</h3>
+
+      <p>O <strong>OU</strong> produz resultado <strong>verdadeiro quando pelo menos uma proposição é
+          verdadeira</strong>. Só será falso quando A e B forem falsas.</p>
+
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>A ∨ B</th>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+      </table>
+
+      <p><strong>Exemplo:</strong> A = “10 é par” (V) e B = “10 é menor que 5” (F). Como A é verdadeira, A ∨ B = V.</p>
+
+      <p><strong>Depois de aprender NÃO, E e OU, estudamos os conectivos condicionais:</strong></p>
+      <br>
+
+      <h3>4. SE... ENTÃO (→) — condicional</h3>
+
+      <p><strong>A → B</strong> significa “Se A, então B”. O resultado só é <strong>falso quando A é verdadeira e B é
+          falsa</strong>.</p>
+
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>A → B</th>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>V</td>
+        </tr>
+      </table>
+
+      <p><strong>Exemplo:</strong> se A = “Está chovendo” (V) e B = “Levo guarda-chuva” (F), então A → B = F.</p>
+      <br>
+
+      <h3>5. SE E SOMENTE SE (↔) — bicondicional</h3>
+
+      <p><strong>A ↔ B</strong> significa “A se e somente se B”. O resultado é <strong>verdadeiro quando A e B possuem o
+          mesmo valor lógico</strong>.</p>
+
+      <table>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>A ↔ B</th>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td>V</td>
+        </tr>
+      </table>
+
+      <p><strong>Exemplo:</strong> A = “4 é par” (V) e B = “8 é par” (V). Portanto, A ↔ B = V.</p>
+
+      <p>Com duas proposições existem <strong>2² = 4</strong> combinações. Com três, <strong>2³ = 8</strong>.</p>
+      
+      <p><strong>Ordem para resolver:</strong> primeiro <strong>NÃO (¬)</strong>, depois <strong>E (∧)</strong>, depois
+        <strong>OU (∨)</strong>, depois <strong>SE... ENTÃO (→)</strong> e, por último, <strong>SE E SOMENTE SE
+          (↔)</strong>, sempre respeitando os parênteses.</p>
+          
+    </div>
+
+  </section>
+
+  <section class="sobre">
+    <h2>Exercícios</h2>
+      
+    <div class="exercicio">
+      <h3>Exercício 1 — Proposição</h3>
+      <p>Classifique a frase <strong>“7 é maior que 3”</strong> como verdadeira ou falsa.</p>
+      <select id="tv1">
+        <option value="">Selecione...</option>
+        <option value="V">Verdadeira (V)</option>
+        <option value="F">Falsa (F)</option>
+      </select>
+      <button onclick="check('tv1','V','r_tv1','Correto! 7 é maior que 3.','Tente novamente.')">Responder</button>
+      <div id="r_tv1" class="resultado"></div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <h2>Operador "E" — ∧</h2>
+    <p>O operador <strong>"E"</strong> é representado por <strong>∧</strong>. O resultado só é verdadeiro quando
+      <strong>as duas proposições são verdadeiras</strong>.</p>
+    <table>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>A ∧ B</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+    </table>
+
+    <div class="exercicio">
+      <h3>Exercício 2 — "E"</h3>
+      <p>Se A = V e B = F, qual é o valor de A ∧ B?</p>
+      <select id="tv2">
+        <option value="">Selecione...</option>
+        <option value="V">V</option>
+        <option value="F">F</option>
+      </select>
+      <button
+        onclick="check('tv2','F','r_tv2','Correto! No E, basta uma proposição ser falsa para o resultado ser falso.','Tente novamente.')">Responder</button>
+      <div id="r_tv2" class="resultado"></div>
+
+    </div>
+
+  </section>
+
+  <section class="sobre">
+
+    <h2>Operador "OU" — ∨</h2>
+    <p>O operador <strong>"OU"</strong> é representado por <strong>∨</strong>. O resultado será falso <strong>somente
+        quando as duas proposições forem falsas</strong>.</p>
+
+    <table>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>A ∨ B</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+    </table>
+
+    <div class="exercicio">
+      <h3>Exercício 3 — "OU"</h3>
+      <p>Se A = F e B = V, qual é o valor de A ∨ B?</p>
+      <select id="tv3">
+        <option value="">Selecione...</option>
+        <option value="V">V</option>
+        <option value="F">F</option>
+      </select>
+      <button
+        onclick="check('tv3','V','r_tv3','Correto! No OU, pelo menos uma proposição verdadeira torna o resultado verdadeiro.','Tente novamente.')">Responder</button>
+      <div id="r_tv3" class="resultado"></div>
+
+    </div>
+
+  </section>
+
+  <section class="sobre">
+
+    <h2>Operador "NÃO" — ¬</h2>
+    <p>O operador <strong>"NÃO"</strong> é representado por <strong>¬</strong>, inverte o valor lógico de uma
+      proposição.</p>
+    <table>
+      <tr>
+        <th>A</th>
+        <th>¬A</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+    </table>
+
+    <div class="exercicio">
+      <h3>Exercício 4 — "NÃO"</h3>
+      <p>Se A = F, qual é o valor de ¬A?</p>
+      <select id="tv4">
+        <option value="">Selecione...</option>
+        <option value="V">V</option>
+        <option value="F">F</option>
+      </select>
+      <button
+        onclick="check('tv4','V','r_tv4','Correto! O NÃO inverte F para V.','Tente novamente.')">Responder</button>
+      <div id="r_tv4" class="resultado"></div>
+
+    </div>
+    
+  </section>
+
+  <section class="sobre">
+    <h2>Operadores "SE... ENTÃO" — → e "SE E SOMENTE SE" — ↔</h2>
+    <p><strong>Condicional (→):</strong> em “Se A, então B”, o resultado só é falso quando <strong>A é verdadeira e B é
+        falsa</strong>. Nos outros três casos, o resultado é verdadeiro.</p>
+
+    <table>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>A → B</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+    </table>
+
+    <p><strong>Bicondicional (↔):</strong> em “A se, e somente se, B”, o resultado é verdadeiro quando <strong>A e B têm
+        o mesmo valor</strong>.</p>
+
+    <table>
+      <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>A ↔ B</th>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>V</td>
+        <td>V</td>
+      </tr>
+      <tr>
+        <td>V</td>
+        <td>F</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>V</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>F</td>
+        <td>V</td>
+      </tr>
+    </table>
+    
+    <div class="exercicio">
+      <h3>Exemplo guiado</h3>
+      <p>Se A = “5 é maior que 2” (V) e B = “5 é par” (F), então <strong>A → B</strong> é F, pois ocorre justamente o
+        caso V → F. Já <strong>A ↔ B</strong> é F, pois os valores são diferentes.</p>
+    </div>
+
+  </section>
+
+  <section class="sobre">
+
+    <h2>Exercício 5 — Complete a tabela do E</h2>
+
+    <p>Complete os resultados de A ∧ B para as quatro combinações abaixo.</p>
+
+    <div class="exercicio">
+
+      <label for="tv5a">V ∧ V =</label><select id="tv5a">
+        <option value="">...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+
+      <label for="tv5b">V ∧ F =</label><select id="tv5b">
+        <option value="">...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+
+      <label for="tv5c">F ∧ V =</label><select id="tv5c">
+        <option value="">...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+
+      <label for="tv5d">F ∧ F =</label><select id="tv5d">
+        <option value="">...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+
+      <button onclick="checkTable()">Corrigir tabela</button>
+
+      <div id="r_tv5" class="resultado"></div>
+
+    </div>
+  </section>
+
+  <section class="sobre">
+    
+    <h2>Pratique diferentes tipos de operações lógicas</h2>
+    <p>Agora você pode praticar diferentes tipos de operações lógicas. Resolva cada questão e confira sua resposta.</p>
+
+    <div class="exercicio">
+
+      <h3>Exercício 6 — E</h3>
+      <p>Se A = V e B = V, qual é A ∧ B?</p>
+      <select id="tv6">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv6','V','r_tv6','Correto! V ∧ V = V.','No E, quando as duas são verdadeiras, o resultado é verdadeiro.')">Responder</button>
+      <div id="r_tv6" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 7 — E</h3>
+      <p>Se A = F e B = F, qual é A ∧ B?</p>
+      <select id="tv7">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv7','F','r_tv7','Correto! F ∧ F = F.','No E, uma proposição falsa já torna o resultado falso.')">Responder</button>
+      <div id="r_tv7" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+
+      <h3>Exercício 8 — OU</h3>
+      <p>Se A = V e B = F, qual é A ∨ B?</p>
+      <select id="tv8">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv8','V','r_tv8','Correto! V ∨ F = V.','No OU, basta uma proposição ser verdadeira.')">Responder</button>
+      <div id="r_tv8" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 9 — OU</h3>
+      <p>Se A = F e B = F, qual é A ∨ B?</p>
+      <select id="tv9">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv9','F','r_tv9','Correto! F ∨ F = F.','O OU só é falso quando as duas proposições são falsas.')">Responder</button>
+      <div id="r_tv9" class="resultado"></div>
+
+    </div>
+
+    <div class="exercicio">
+
+      <h3>Exercício 10 — NÃO</h3>
+      <p>Se A = V, qual é ¬A?</p>
+      <select id="tv10">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button onclick="check('tv10','F','r_tv10','Correto! ¬V = F.','O NÃO inverte o valor lógico.')">Responder</button>
+      <div id="r_tv10" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 11 — NÃO</h3>
+      <p>Se A = F, qual é ¬A?</p>
+      <select id="tv11">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button onclick="check('tv11','V','r_tv11','Correto! ¬F = V.','O NÃO transforma F em V.')">Responder</button>
+      <div id="r_tv11" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+
+      <h3>Exercício 12 — Expressão lógica</h3>
+      <p>Considere A = V e B = F. Qual é o resultado de (A ∧ B) ∨ A?</p>
+      <select id="tv12">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv12','V','r_tv12','Correto! A ∧ B = F; depois F ∨ V = V.','Resolva primeiro o E e depois o OU.')">Responder</button>
+      <div id="r_tv12" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 13 — Expressão lógica</h3>
+      <p>Considere A = V e B = F. Qual é o resultado de ¬A ∨ B?</p>
+      <select id="tv13">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv13','F','r_tv13','Correto! ¬V = F e F ∨ F = F.','Primeiro aplique o NÃO em A.')">Responder</button>
+      <div id="r_tv13" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 14 — Expressão lógica</h3>
+      <p>Considere A = F e B = V. Qual é o resultado de ¬A ∧ B?</p>
+      <select id="tv14">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv14','V','r_tv14','Correto! ¬F = V e V ∧ V = V.','Primeiro inverta A e depois faça o E.')">Responder</button>
+      <div id="r_tv14" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+
+      <h3>Exercício 15 — Escolha a expressão verdadeira</h3>
+      <p>Qual expressão resulta em V quando A = V e B = F?</p>
+      <select id="tv15">
+        <option value="">Selecione...</option>
+        <option value="1">A ∧ B</option>
+        <option value="2">A ∨ B</option>
+        <option value="3">¬A</option>
+      </select>
+      <button
+        onclick="check('tv15','2','r_tv15','Correto! A ∨ B = V.','Teste cada alternativa usando A = V e B = F.')">Responder</button>
+      <div id="r_tv15" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 16 — Complete a tabela do OU</h3>
+      <p>Complete os quatro resultados de A ∨ B.</p>
+      <label>V ∨ V = <select id="tv16a">
+          <option value="">...</option>
+          <option>V</option>
+          <option>F</option>
+        </select></label>
+      <label>V ∨ F = <select id="tv16b">
+          <option value="">...</option>
+          <option>V</option>
+          <option>F</option>
+        </select></label>
+      <label>F ∨ V = <select id="tv16c">
+          <option value="">...</option>
+          <option>V</option>
+          <option>F</option>
+        </select></label>
+      <label>F ∨ F = <select id="tv16d">
+          <option value="">...</option>
+          <option>V</option>
+          <option>F</option>
+        </select></label>
+      <button onclick="checkOrTable()">Corrigir tabela</button>
+      <div id="r_tv16" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 17 — Complete a tabela do NÃO</h3>
+      <p>Complete a coluna ¬A.</p>
+      <label>¬V = <select id="tv17a">
+          <option value="">...</option>
+          <option>V</option>
+          <option>F</option>
+        </select></label>
+      <label>¬F = <select id="tv17b">
+          <option value="">...</option>
+          <option>V</option>
+          <option>F</option>
+        </select></label>
+      <button onclick="checkNotTable()">Corrigir tabela</button>
+      <div id="r_tv17" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 18 — Situação do cotidiano</h3>
+      <p>Considere: A = “Está chovendo” (V) e B = “Levei guarda-chuva” (V). A afirmação “Está chovendo E levei
+        guarda-chuva” é:</p>
+      <select id="tv18">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv18','V','r_tv18','Correto! V ∧ V = V.','As duas afirmações são verdadeiras.')">Responder</button>
+      <div id="r_tv18" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 19 — Situação do cotidiano</h3>
+      <p>A = “Hoje é sábado” (F) e B = “Tenho aula” (F). A afirmação “Hoje é sábado OU tenho aula” é:</p>
+      <select id="tv19">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv19','F','r_tv19','Correto! F ∨ F = F.','No OU, as duas falsas produzem resultado falso.')">Responder</button>
+      <div id="r_tv19" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 20 — Desafio</h3>
+      <p>Considere A = F e B = V. Calcule: ¬(A ∨ B).</p>
+      <select id="tv20">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv20','F','r_tv20','Correto! A ∨ B = V e ¬V = F.','Primeiro calcule o que está entre parênteses e depois aplique o NÃO.')">Responder</button>
+      <div id="r_tv20" class="resultado"></div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <h2>Pratique um pouco mais</h2>
+    <p>Continue praticando. Estes exercícios aumentam gradualmente a dificuldade e incluem interpretação, tabelas e
+      expressões lógicas.</p>
+
+    <div class="exercicio">
+      <h3>Exercício 21 — E</h3>
+      <p>V ∧ F é:</p>
+      <select id="tv21">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button onclick="check('tv21','F','r_tv21','Correto!','No E, V ∧ F resulta em F.')">Responder</button>
+      <div id="r_tv21" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 22 — E</h3>
+      <p>F ∧ V é:</p>
+      <select id="tv22">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv22','F','r_tv22','Correto!','No E, uma proposição falsa torna o resultado falso.')">Responder</button>
+      <div id="r_tv22" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 23 — OU</h3>
+      <p>V ∨ V é:</p>
+      <select id="tv23">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button onclick="check('tv23','V','r_tv23','Correto!','V ∨ V é verdadeiro.')">Responder</button>
+      <div id="r_tv23" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 24 — OU</h3>
+      <p>F ∨ V é:</p>
+      <select id="tv24">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv24','V','r_tv24','Correto!','No OU, basta uma proposição ser verdadeira.')">Responder</button>
+      <div id="r_tv24" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 25 — NÃO</h3>
+      <p>Qual é ¬F?</p>
+      <select id="tv25">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button onclick="check('tv25','V','r_tv25','Correto!','O NÃO inverte F para V.')">Responder</button>
+      <div id="r_tv25" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 26 — NÃO</h3>
+      <p>Qual é ¬V?</p>
+      <select id="tv26">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button onclick="check('tv26','F','r_tv26','Correto!','O NÃO inverte V para F.')">Responder</button>
+      <div id="r_tv26" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 27 — Expressão</h3>
+      <p>Se A = V e B = V, calcule A ∧ ¬B.</p>
+      <select id="tv27">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv27','F','r_tv27','Correto! ¬B = F e V ∧ F = F.','Primeiro aplique o NÃO em B.')">Responder</button>
+      <div id="r_tv27" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 28 — Expressão</h3>
+      <p>Se A = F e B = F, calcule ¬A ∨ B.</p>
+      <select id="tv28">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv28','V','r_tv28','Correto! ¬F = V e V ∨ F = V.','Primeiro inverta A.')">Responder</button>
+      <div id="r_tv28" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 29 — Expressão</h3>
+      <p>Se A = F e B = V, calcule A ∨ ¬B.</p>
+      <select id="tv29">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv29','F','r_tv29','Correto! ¬V = F e F ∨ F = F.','Aplique o NÃO em B antes do OU.')">Responder</button>
+      <div id="r_tv29" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+      <h3>Exercício 30 — Expressão</h3>
+      <p>Se A = V e B = F, calcule ¬(A ∧ B).</p>
+      <select id="tv30">
+        <option value="">Selecione...</option>
+        <option>V</option>
+        <option>F</option>
+      </select>
+      <button
+        onclick="check('tv30','V','r_tv30','Correto! A ∧ B = F e ¬F = V.','Resolva primeiro o que está entre parênteses.')">Responder</button>
+      <div id="r_tv30" class="resultado"></div>
+    </div>
+
+    </div>
+  </section>
+
+  <script>
+    function check(id, answer, resultId, ok, no) {
+      const value = document.getElementById(id).value;
+      document.getElementById(resultId).textContent = value === answer ? ok : no;
+    }
+    function checkTable() {
+      const ans = ['V', 'F', 'F', 'F'];
+      const ids = ['tv5a', 'tv5b', 'tv5c', 'tv5d'];
+      const ok = ids.every((id, i) => document.getElementById(id).value === ans[i]);
+      document.getElementById('r_tv5').textContent = ok ? 'Parabéns! Você completou a tabela corretamente.' : 'Há respostas incorretas. Revise a regra do E e tente novamente.';
+    }
+
+    function checkOrTable() {
+      const ans = ['V', 'V', 'V', 'F'];
+      const ids = ['tv16a', 'tv16b', 'tv16c', 'tv16d'];
+      const ok = ids.every((id, i) => document.getElementById(id).value === ans[i]);
+      document.getElementById('r_tv16').textContent = ok
+        ? 'Parabéns! A tabela do OU está correta.'
+        : 'Há respostas incorretas. Lembre-se: no OU, só F ∨ F é falso.';
+    }
+    function checkNotTable() {
+      const ok = document.getElementById('tv17a').value === 'F' &&
+        document.getElementById('tv17b').value === 'V';
+      document.getElementById('r_tv17').textContent = ok
+        ? 'Parabéns! A tabela do NÃO está correta.'
+        : 'Há respostas incorretas. O NÃO sempre inverte V e F.';
+    }
+
+
+    function numCheck(id, answer, resultId, ok, no) {
+      const value = Number(document.getElementById(id).value);
+      document.getElementById(resultId).textContent = value === answer ? ok : no;
+    }
+
+  </script>
+
+  <section class="card_voltar"><a class="voltar" href="index.html">Voltar para o início</a></section>
+  
+  <footer>
+    <p>Projeto acadêmico - 2026</p>
+  </footer>
+  
+</body>
+
+</html>

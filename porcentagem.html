@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOX - Porcentagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>NOX</h1>
+        <p>Assistente de Matemática</p>
+    </header>
+
+    <section class="sobre">
+        <h2>Porcentagem</h2>
+    </section>
+
+    <section class="sobre">
+        <section class="sobre">
+
+        <h2>O que é porcentagem?</h2>
+
+        <p class="card">Porcentagem é uma forma de representar uma parte de um total. Ela é representada pelo símbolo %.<br>
+            A porcentagem é muito utilizada no dia a dia, como em descontos, aumentos, juros e estatísticas.</p>
+
+    </section>
+
+    <section class="sobre">
+
+        <h2>Como calcular uma porcentagem?</h2>
+
+        <p>Para calcular uma porcentagem, podemos transformar a porcentagem em um número decimal e multiplicar pelo valor desejado. </p>
+
+    <div class="card">
+
+        <p>Exemplo:</p>
+
+        <div class="sobre">
+        <p>Quanto é 20% de 200?</br></br>
+
+        <p>20% = 20 ÷ 100 = 0,20</p>
+
+        <p>0,20 × 200 = 40</p></div>
+
+        <p> <strong>Resposta</strong>: 20% de 200 é 40.</p>
+
+    </div>
+
+    </section>
+
+    <section class="sobre">
+
+        <h2>Exemplo de desconto</h2>
+
+        <p>Imagine que um produto custa R$ 100,00 e está com 10% de desconto.</p>
+
+    <div class="card">
+
+        <p>10% de 100 = 10</p>
+
+        <p>100 - 10 = 90</p>
+
+        <p class="card">O produto ficará por R$ 90,00.</p>
+
+    </div>
+
+    </section>
+
+    <section class="sobre">
+
+        <h2>Exemplo de aumento</h2>
+
+        <p>Agora imagine que um produto custa R$ 200,00 e sofreu um aumento de 15%.</p>
+
+    <div class="card">
+
+        <p>15% de 200 = 30</p>
+
+        <p>200 + 30 = 230</p>
+
+        <p class="card">O novo valor será R$ 230,00.</p>
+
+    </div>
+
+    </section>
+
+    <section class="sobre">
+
+        <h2>Fórmula</h2>
+
+    <div class="card">
+
+        <p class="card">Porcentagem = (valor × percentual) ÷ 100</p>
+
+    </div>
+
+        <p>Essa fórmula pode ser utilizada para encontrar uma porcentagem de determinado valor.</p>
+
+    </section>
+
+    <section class="sobre">
+
+        <h2>Resumo</h2>
+
+        <p>A porcentagem representa uma parte de um total dividido em 100 partes.</p>
+
+        <p> Ela pode ser utilizada para calcular descontos, aumentos, juros e diversas situações do cotidiano.</p>
+
+    </section>
+
+        <h2>Exercícios</h2>
+
+        <div class="exercicio">
+            <div class="nivel">1. Conceito</div>
+            <p>50% de 100 corresponde a quanto?</p>
+            <input id="1" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('1','50','r1','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r1" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">2. Cálculo</div>
+            <p>10% de 200 é quanto?</p>
+            <input id="2" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('2','20','r2','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r2" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">3. Cálculo</div>
+            <p>25% de 80 é quanto?</p>
+            <input id="3" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('3','20','r3','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r3" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">4. Cálculo</div>
+            <p>15% de 200 é quanto?</p>
+            <input id="4" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('4','30','r4','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r4" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">5. Cálculo</div>
+            <p>30% de 150 é quanto?</p>
+            <input id="5" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('5','45','r5','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r5" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">6. Cálculo</div>
+            <p>5% de 400 é quanto?</p>
+            <input id="6" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('6','20','r6','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r6" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">7. Cálculo</div>
+            <p>12% de 250 é quanto?</p>
+            <input id="7" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('7','30','r7','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r7" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">8. Cálculo</div>
+            <p>40% de 350 é quanto?</p>
+            <input id="8" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('8','140','r8','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r8" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">9. Cálculo</div>
+            <p>75% de 120 é quanto?</p>
+            <input id="9" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('9','90','r9','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r9" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">10. Cálculo</div>
+            <p>8% de 500 é quanto?</p>
+            <input id="10" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('10','40','r10','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r10" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">11. Cálculo</div>
+            <p>35% de 200 é quanto?</p>
+            <input id="11" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('11','70','r11','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r11" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">12. Cálculo</div>
+            <p>60% de 90 é quanto?</p>
+            <input id="12" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('12','54','r12','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r12" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">13. Cálculo</div>
+            <p>22% de 50 é quanto?</p>
+            <input id="13" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('13','11','r13','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r13" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">14. Cálculo</div>
+            <p>18% de 300 é quanto?</p>
+            <input id="14" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('14','54','r14','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r14" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">15. Cálculo</div>
+            <p>2% de 750 é quanto?</p>
+            <input id="15" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('15','15','r15','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r15" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">16. Desconto</div>
+            <p>Um produto custa R$ 100 e tem 10% de desconto. Qual o preço final?</p>
+            <input id="16" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('16','90','r16','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r16" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">17. Desconto</div>
+            <p>Um produto custa R$ 200 e tem 25% de desconto. Qual o preço final?</p>
+            <input id="17" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('17','150','r17','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r17" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">18. Desconto</div>
+            <p>Um produto custa R$ 80 e tem 15% de desconto. Qual o preço final?</p>
+            <input id="18" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('18','68','r18','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r18" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">19. Desconto</div>
+            <p>Uma camiseta custa R$ 120 e tem 20% de desconto. Qual o preço final?</p>
+            <input id="19" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('19','96','r19','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r19" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">20. Desconto</div>
+            <p>Um livro custa R$ 50 e tem 30% de desconto. Qual o preço final?</p>
+            <input id="20" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('20','35','r20','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r20" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">21. Aumento</div>
+            <p>Um salário de R$ 1.000 recebe aumento de 10%. Qual o novo valor?</p>
+            <input id="21" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('21','1100','r21','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r21" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">22. Aumento</div>
+            <p>Um produto de R$ 200 aumenta 15%. Qual o novo preço?</p>
+            <input id="22" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('22','230','r22','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r22" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">23. Aumento</div>
+            <p>Uma mensalidade de R$ 300 aumenta 20%. Qual o novo valor?</p>
+            <input id="23" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('23','360','r23','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r23" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">24. Aumento</div>
+            <p>Um preço de R$ 80 aumenta 25%. Qual o novo valor?</p>
+            <input id="24" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('24','100','r24','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r24" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">25. Aumento</div>
+            <p>Um salário de R$ 1.500 aumenta 8%. Qual o novo salário?</p>
+            <input id="25" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('25','1620','r25','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r25" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">26. Interpretação</div>
+            <p>40% corresponde à fração 40/100. Em decimal, qual é o valor?</p>
+            <input id="26" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('26','0.4','r26','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r26" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">27. Interpretação</div>
+            <p>75% em decimal corresponde a quanto?</p>
+            <input id="27" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('27','0.75','r27','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r27" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">28. Interpretação</div>
+            <p>5% em decimal corresponde a quanto?</p>
+            <input id="28" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('28','0.05','r28','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r28" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">29. Problema</div>
+            <p>Em uma turma com 40 alunos, 50% foram aprovados. Quantos alunos?</p>
+            <input id="29" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('29','20','r29','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r29" class="resultado"></div>
+        </div>
+
+        <div class="exercicio">
+            <div class="nivel">30. Problema</div>
+            <p>Em uma caixa há 200 peças; 15% são defeituosas. Quantas?</p>
+            <input id="30" type="number" step="any" placeholder="Digite sua resposta">
+            <button
+                onclick="numCheck('30','30','r30','Correto!','Tente novamente. Faça o cálculo passo a passo.')">Responder</button>
+            <div id="r30" class="resultado"></div>
+        </div>
+
+        </div>
+    </section>
+    <section class="card_voltar"><a class="voltar" href="index.html">Voltar para o início</a></section>
+    <footer>
+        <p>Projeto acadêmico - 2026</p>
+    </footer>
+    <script>
+        function check(id, answer, resultId, ok, no) {
+            const value = document.getElementById(id).value;
+            document.getElementById(resultId).textContent = value === answer ? ok : no;
+        }
+        function numCheck(id, answer, resultId, ok, no) {
+            const raw = document.getElementById(id).value.replace(',', '.');
+            const value = Number(raw);
+            document.getElementById(resultId).textContent = Math.abs(value - answer) < 0.001 ? ok : no;
+        }
+
+    </script>
+</body>
+
+</html>
