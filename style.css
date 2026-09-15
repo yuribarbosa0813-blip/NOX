@@ -1,150 +1,151 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        font-family: Arial, sans-serif;
-        color: white;
-        background: url("img/13 de ago. de 2026, 09_09_36.png") center/cover fixed;
-        min-height: 100vh;
-    }
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url("img/13 de ago. de 2026, 09_09_36.png") center/cover fixed;
+    min-height: 100vh;
+}
 
-    header {
-        text-align: center;
-        padding: 25px;
-    }
+header {
+    text-align: center;
+    padding: 25px;
+}
 
-    header h1 {
-        color: #38bdf8;
-        font-size: 40px;
-        font-family: 'Montserrat';
-    }
+header h1 {
+    color: #38bdf8;
+    font-size: 40px;
+    font-family: 'Montserrat';
+}
 
-    .apresentacao {
-        display: flex;
-        align-items: center;
-        justify-content: center   ;
-        gap: 60px;
-        margin: 50px auto;
-        max-width: 1000px;
-    }
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px auto;
+    max-width: 1000px;
+}
 
-    .apresentacao img {
-        width: 300px;
-        border-radius: 15px;
-    }
+.apresentacao img {
+    width: 300px;
+    border-radius: 15px;
+}
 
-    .apresentacao .texto {
-        max-width: 500px;
-    }
+.apresentacao .texto {
+    max-width: 500px;
+}
 
-    .apresentacao h2 {
-        font-size: 32px;
-    }
+.apresentacao h2 {
+    font-size: 32px;
+}
 
-    .apresentacao-nox {
-        font-family: 'Roboto';
-    }
+.apresentacao-nox {
+    font-family: 'Roboto';
+}
 
-    .p1 {
-        color: #38bdf8;
-        margin: 10px 0;
-    }
+.p1 {
+    color: #38bdf8;
+    margin: 10px 0;
+}
 
-    .como-funciona,.topicos,.sobre,.sobre_tabverdades {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 30px;
-        background: rgba(0, 0, 20, 0.8);
-        border-radius: 15px;
-    }
+.como-funciona,
+.topicos,
+.sobre,
+.sobre_tabverdades {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0, 0, 20, 0.8);
+    border-radius: 15px;
+}
 
-    h2 {
-        color: #38bdf8;
-        margin-bottom: 15px;
-        text-align: center;
-    }
+h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    text-align: center;
+}
 
-    p {
-        line-height: 1.5;
-    }
+p {
+    line-height: 1.5;
+}
 
-    .lista-topicos {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-    }
+.lista-topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
 
-    .lista-topicos a {
-        padding: 15px;
-        background: #0f172a;
-        color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        border-left: 4px solid #38bdf8;
-    }
+.lista-topicos a {
+    padding: 15px;
+    background: #0f172a;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+}
 
-    .lista-topicos a:hover {
-        background: #1e293b;
-        color: #38bdf8;
-    }
+.lista-topicos a:hover {
+    background: #1e293b;
+    color: #38bdf8;
+}
 
-    .cards {
-        display: flex;
-        gap: 15px;
-        max-width: 1000px;
-        margin: auto;
-    }
+.cards {
+    display: flex;
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-    .card {
-        padding: 20px;
-        background: rgba(15, 23, 42, 0.9);
-        border-radius: 10px;
-        flex: 1;
-    }
+.card {
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 10px;
+    flex: 1;
+}
 
-    .card h3 {
-        color: #38bdf8;
-        margin-bottom: 10px;
-    }
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
 
-    .voltar{
-        text-decoration: none;
-        color: white;
-        display: flex;
-        justify-content: center;
+.voltar {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 
-    }
-    
-    .card_voltar {
-        width: fit-content;
-        margin: 30px auto ;
-        padding: 20px;
-        background: rgba(0, 0, 20, 0.8);
-        border-radius: 10px;
-        flex: 1;
-        text-decoration: none;
-        color: white;
-    }
+.card_voltar {
+    width: fit-content;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 20, 0.8);
+    border-radius: 10px;
+    flex: 1;
+    text-decoration: none;
+    color: white;
+}
 
-    .card_voltar:hover{
-        transform: translateY(-5px);
-        background: rgba(30, 41, 59, 0.95);
-        box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
-    }
-        
+.card_voltar:hover {
+    transform: translateY(-5px);
+    background: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
 
-    footer {
-        text-align: center;
-        padding: 30px;
-        margin-top: 50px;
-    }
-
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
 
 /* ===== Exercícios interativos ===== */
+
 .exercicio {
     margin-top: 25px;
     padding: 20px;
@@ -211,23 +212,11 @@ table {
     margin: 15px 0;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #64748b;
     padding: 10px;
     text-align: center;
-}
-
-@media (max-width: 700px) {
-    .apresentacao {
-        flex-direction: column;
-        gap: 25px;
-        padding: 15px;
-    }
-
-    .como-funciona,.topicos,.sobre,.sobre_tabverdades {
-        margin: 25px 15px;
-        padding: 20px;
-    }
 }
 
 .nivel {
@@ -236,6 +225,7 @@ th, td {
     font-weight: bold;
     font-size: 18px;
 }
+
 .teoria {
     margin-top: 12px;
     padding: 16px;
@@ -243,8 +233,90 @@ th, td {
     border-left: 4px solid #38bdf8;
     border-radius: 8px;
 }
+
 .exercicio small {
     display: block;
     margin-top: 8px;
-    opacity: .85;
+    opacity: 0.85;
+}
+
+/* ===== Responsividade ===== */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        gap: 25px;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .apresentacao img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .apresentacao .texto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .apresentacao h2 {
+        font-size: 27px;
+    }
+
+    .como-funciona,
+    .topicos,
+    .sobre,
+    .sobre_tabverdades {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .exercicio {
+        padding: 15px;
+    }
+
+    .exercicio input,
+    .exercicio select,
+    .exercicio textarea {
+        max-width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .card_voltar {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px 15px;
+    }
 }
